@@ -1,0 +1,6 @@
+<a href="\data\create">Create Employee</a>
+{% for employee in employees %}
+<h3>{{employee}} <a href="\data\{{employee.employee_id}}">View</a>
+    <a href="\data\{{employee.employee_id}}\update">Update</a>
+    <a href="\data\{{employee.employee_id}}\delete">Delete</a></h3><hr>
+{% endfor %}
